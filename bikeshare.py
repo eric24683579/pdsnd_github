@@ -279,12 +279,15 @@ def main():
         # ask if the user wants to see individual trip data
         view_raw(df)
         try:
-            restart = input('\nWould you like to restart? Enter yes or no.\n')
-            if restart.lower() != 'yes':
+            restart = input('\nWould you like to restart? Enter yes or no.\n').lower()
+            assert restart in ["yes", "no"]
+            if restart != 'yes':
                 print('This is the end of the program. Bye-bye.')
                 break
         except KeyboardInterrupt:
             print('\nNo input taken')
+        except AssertionError:
+
 
 
 
