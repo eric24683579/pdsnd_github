@@ -278,10 +278,14 @@ def main():
         user_stats(df)
         # ask if the user wants to see individual trip data
         view_raw(df)
-        restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
-            print('This is the end of the program. Bye-bye.')
-            break
+        try:
+            restart = input('\nWould you like to restart? Enter yes or no.\n')
+            if restart.lower() != 'yes':
+                print('This is the end of the program. Bye-bye.')
+                break
+        except KeyboardInterrupt:
+            print('\nNo input taken')
+
 
 
 if __name__ == "__main__":
