@@ -10,13 +10,13 @@ interactive environment where a user chooses the data and filter for a
 dataset to analyze.
 
 ### Files used
-bikeshare.py
-chicago.csv
-new_york_city.csv
+bikeshare.py  
+chicago.csv  
+new_york_city.csv  
 washington.csv
 
 ### Credits
-www.programiz.com
-www.w3schools.com
-www.geeksforgeeks.org
+www.programiz.com  
+www.w3schools.com  
+www.geeksforgeeks.org  
 pandas.pydata.org
